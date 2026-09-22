@@ -1,0 +1,419 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Diwei mobile computing carts for medical care, laboratories and industrial workflows with OEM/ODM support.">
+  <title>Mobile Computing Carts | Medical &amp; Industrial Workstations | Diwei</title>
+  <style>
+    :root {
+      --ink: #252525;
+      --muted: #666b70;
+      --line: #e7e8ea;
+      --soft: #f7f7f8;
+      --red: #e30613;
+      --red-dark: #bd0010;
+      --blue: #165d9c;
+      --nav: #252525;
+      --max: 1180px;
+      --shadow: 0 12px 32px rgba(30, 31, 34, .10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid #f2a900;
+      outline-offset: 3px;
+    }
+    .container { width: min(var(--max), calc(100% - 64px)); margin: 0 auto; }
+
+    /* Header: deliberately close to the current Diwei page. */
+    .site-header { border-bottom: 1px solid #ededed; background: #fff; }
+    .header-inner {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; min-width: 220px; }
+    .brand-mark {
+      width: 42px; height: 34px; position: relative;
+      border-bottom: 5px solid #195e9b;
+    }
+    .brand-mark::before {
+      content: ""; position: absolute; inset: 2px 8px 5px 2px;
+      border-left: 4px solid var(--red); border-top: 4px solid var(--red);
+      transform: skewX(-25deg) rotate(12deg);
+    }
+    .brand-mark::after {
+      content: ""; position: absolute; width: 18px; height: 12px;
+      left: 17px; top: 12px; border: 3px solid #d7a400; border-radius: 50%;
+    }
+    .brand-name { font-size: 29px; font-weight: 700; font-style: italic; color: #bc2029; letter-spacing: -.8px; }
+    .main-nav { display: flex; align-items: center; gap: 32px; margin-left: auto; }
+    .main-nav a { text-decoration: none; font-size: 15px; font-weight: 700; letter-spacing: .3px; }
+    .main-nav a:not(.plain)::after { content: "⌄"; margin-left: 8px; font-size: 15px; }
+    .header-tools { display: flex; align-items: center; gap: 12px; }
+    .search { display: flex; height: 40px; }
+    .search input { width: 210px; border: 1px solid #d6d8da; padding: 0 12px; font-size: 14px; }
+    .search button { width: 43px; border: 0; background: var(--nav); color: #fff; font-weight: 700; cursor: pointer; }
+    .language { color: #42464a; white-space: nowrap; font-size: 14px; }
+    .language::before { content: "◉"; margin-right: 7px; font-size: 11px; }
+
+    .breadcrumb { padding: 16px 0; color: #6f747a; font-size: 14px; }
+    .breadcrumb a { text-decoration: none; }
+    .breadcrumb span { margin: 0 10px; color: #b4b7ba; }
+
+    .hero { padding: 28px 0 26px; }
+    .eyebrow { color: var(--red); font-size: 12px; font-weight: 800; letter-spacing: 1.8px; text-transform: uppercase; }
+    h1, h2, h3 { line-height: 1.18; margin: 0; }
+    h1 { max-width: 850px; font-size: clamp(32px, 4vw, 48px); letter-spacing: -1.5px; }
+    .hero-copy { max-width: 860px; margin: 18px 0 23px; color: #555b60; font-size: 18px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 45px; padding: 0 22px; border-radius: 2px; text-decoration: none; font-weight: 700; font-size: 14px; transition: background-color .2s, color .2s, border-color .2s; }
+    .button-primary { background: var(--red); color: #fff; }
+    .button-primary:hover { background: var(--red-dark); }
+    .button-secondary { border: 1px solid #c6c9cc; color: var(--ink); background: #fff; }
+    .button-secondary:hover { border-color: var(--ink); }
+
+    .application-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .application-card { display: flex; justify-content: space-between; gap: 24px; padding: 22px 24px; border: 1px solid var(--line); background: var(--soft); text-decoration: none; transition: border-color .2s, box-shadow .2s, transform .2s; }
+    .application-card:hover { border-color: #bfc4c8; box-shadow: var(--shadow); transform: translateY(-2px); }
+    .application-card h2 { font-size: 22px; margin-bottom: 5px; }
+    .application-card p { color: var(--muted); margin: 0; font-size: 14px; max-width: 430px; }
+    .arrow { align-self: center; color: var(--red); font-size: 25px; font-weight: 700; }
+
+    .product-section { padding: 38px 0 45px; border-top: 1px solid var(--line); }
+    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 22px; }
+    .section-heading h2 { font-size: 31px; letter-spacing: -.6px; }
+    .section-heading p { color: var(--muted); margin: 0; font-size: 14px; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .product-card { min-height: 300px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; text-decoration: none; transition: box-shadow .2s, transform .2s; }
+    .product-card:hover { position: relative; z-index: 1; box-shadow: var(--shadow); transform: translateY(-2px); }
+    .product-image { height: 195px; display: grid; place-items: center; background: #fff; position: relative; overflow: hidden; }
+    .product-image::after { content: "DIWEI"; position: absolute; bottom: 8px; right: 12px; color: #e4e5e6; font-size: 9px; letter-spacing: 2px; }
+    .product-art { width: 132px; height: 130px; position: relative; filter: drop-shadow(8px 9px 5px rgba(0,0,0,.12)); }
+    .screen { position: absolute; left: 34px; top: 8px; width: 68px; height: 45px; background: linear-gradient(135deg,#fff 0 10%,#b9c8d7 11% 14%,#3d78a8 15% 100%); border: 5px solid #f2f3f4; border-radius: 3px; box-shadow: 0 0 0 1px #a6aaae; }
+    .screen::after { content: ""; position: absolute; width: 11px; height: 30px; left: 26px; top: 41px; background: #bdc2c6; }
+    .column { position: absolute; left: 63px; top: 82px; width: 10px; height: 34px; background: #c5c8ca; border-radius: 3px; }
+    .worktop { position: absolute; left: 22px; top: 76px; width: 92px; height: 14px; background: #f5f5f5; border: 2px solid #babec1; border-radius: 2px; }
+    .base { position: absolute; left: 18px; bottom: 8px; width: 100px; height: 13px; background: #bfc3c5; border-radius: 50%; }
+    .wheel { position: absolute; width: 13px; height: 13px; bottom: 1px; background: #73777b; border-radius: 50%; }
+    .w1 { left: 21px; } .w2 { right: 21px; }
+    .laptop .screen { width: 71px; height: 39px; left: 31px; top: 12px; }
+    .laptop .worktop { top: 66px; height: 22px; }
+    .dual .screen:first-child { left: 5px; transform: rotate(-8deg); }
+    .dual .screen:nth-child(2) { left: 66px; transform: rotate(8deg); }
+    .dual .column { left: 64px; }
+    .cart .worktop { width: 108px; left: 12px; height: 22px; top: 70px; }
+    .cart .column { height: 40px; top: 89px; }
+    .product-info { padding: 17px 18px 20px; }
+    .product-info h3 { font-size: 17px; margin-bottom: 6px; }
+    .product-info p { margin: 0; color: #70757a; font-size: 13px; }
+
+    .content-band { padding: 48px 0; background: #f5f6f7; border-top: 1px solid var(--line); }
+    .content-band h2 { font-size: 31px; margin-bottom: 12px; }
+    .content-band > .container > p { max-width: 800px; color: var(--muted); margin: 0 0 26px; }
+    .use-cases { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .use-case { padding: 25px; background: #fff; border-top: 4px solid var(--red); box-shadow: 0 3px 15px rgba(0,0,0,.04); }
+    .use-case.industrial { border-top-color: var(--blue); }
+    .use-case h3 { font-size: 21px; margin-bottom: 8px; }
+    .use-case p { color: var(--muted); margin: 0 0 14px; font-size: 15px; }
+    .text-link { color: var(--red); font-size: 14px; font-weight: 700; text-decoration: none; }
+    .text-link:hover { text-decoration: underline; }
+
+    .quick-links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 19px; }
+    .quick-links a { padding: 7px 12px; border: 1px solid #d9dcdf; color: #555a5f; text-decoration: none; font-size: 13px; background: #fff; }
+    .quick-links a:hover { border-color: var(--red); color: var(--red); }
+
+    .partner-strip { display: grid; grid-template-columns: 1fr 1.4fr; gap: 28px; align-items: center; margin-top: 28px; padding: 23px 25px; border-left: 4px solid var(--red); background: #fafafa; }
+    .partner-strip h2 { font-size: 24px; margin: 3px 0 5px; }
+    .partner-strip p { color: var(--muted); margin: 0; font-size: 14px; }
+    .partner-points { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .partner-point { padding: 12px 14px; border: 1px solid #e0e2e4; background: #fff; font-size: 13px; font-weight: 700; }
+    .partner-point::before { content: "✓"; color: var(--red); margin-right: 8px; }
+
+    .configuration-section { padding: 48px 0 44px; }
+    .configuration-section h2 { font-size: 31px; margin-bottom: 10px; }
+    .configuration-intro { max-width: 800px; margin: 0 0 22px; color: var(--muted); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); }
+    .config-table { width: 100%; min-width: 690px; border-collapse: collapse; background: #fff; }
+    .config-table th, .config-table td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }
+    .config-table th { color: #fff; background: var(--nav); font-size: 12px; letter-spacing: .6px; text-transform: uppercase; }
+    .config-table tr:last-child td { border-bottom: 0; }
+    .config-table td:first-child { width: 24%; font-weight: 700; color: var(--ink); }
+    .config-table td:last-child { color: var(--red); font-weight: 700; }
+
+    .resource-section { padding: 38px 0; background: #f5f6f7; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .resource-layout { display: grid; grid-template-columns: 1.25fr .75fr; gap: 42px; align-items: center; }
+    .resource-section h2 { font-size: 28px; margin: 3px 0 9px; }
+    .resource-section p { max-width: 720px; color: var(--muted); margin: 0; }
+    .resource-actions { display: flex; flex-direction: column; gap: 10px; }
+    .resource-actions .button { width: 100%; }
+    .resource-note { margin-top: 22px; padding-top: 14px; border-top: 1px solid #dfe1e3; color: var(--muted); font-size: 13px; }
+    .resource-note strong { color: var(--ink); }
+
+    .features-section { padding: 45px 0 48px; border-top: 1px solid var(--line); }
+    .features-section h2 { font-size: 31px; margin-bottom: 10px; }
+    .features-intro { max-width: 810px; color: var(--muted); margin: 0 0 23px; }
+    .feature-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .feature-item { padding: 19px 16px; border: 1px solid var(--line); background: #fff; }
+    .feature-item h3 { font-size: 16px; margin-bottom: 7px; }
+    .feature-item p { color: var(--muted); font-size: 13px; line-height: 1.5; margin: 0; }
+
+    .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
+    .proof-item { padding: 18px; border: 1px solid #3f4245; background: #303235; }
+    .proof-item strong { display: block; color: #fff; margin-bottom: 5px; font-size: 15px; }
+    .proof-item span { display: block; color: #c8cbcd; font-size: 13px; line-height: 1.45; }
+
+    .insights-section { padding: 46px 0; background: #fff; border-top: 1px solid var(--line); }
+    .insights-section h2 { font-size: 31px; margin-bottom: 10px; }
+    .insights-intro { max-width: 790px; color: var(--muted); margin: 0 0 23px; }
+    .insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .insight-card { display: flex; flex-direction: column; min-height: 230px; padding: 22px; border: 1px solid var(--line); background: var(--soft); }
+    .insight-card .tag { color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: 1.1px; text-transform: uppercase; }
+    .insight-card h3 { margin: 10px 0 9px; font-size: 19px; }
+    .insight-card p { color: var(--muted); margin: 0 0 18px; font-size: 14px; line-height: 1.55; }
+    .insight-card .text-link { margin-top: auto; }
+
+    .guide { padding: 50px 0; }
+    .guide-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 46px; align-items: start; }
+    .guide h2 { font-size: 31px; margin-bottom: 12px; }
+    .guide .lead { color: var(--muted); margin-top: 0; }
+    .checklist { list-style: none; padding: 0; margin: 24px 0 0; }
+    .checklist li { position: relative; padding: 0 0 14px 32px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+    .checklist li::before { content: "✓"; position: absolute; left: 0; top: 1px; color: var(--red); font-weight: 800; }
+    .quote-box { padding: 30px; color: #fff; background: var(--nav); }
+    .quote-box h2 { color: #fff; font-size: 28px; }
+    .quote-box p { color: #d8dadd; margin: 14px 0 23px; }
+    .quote-box .button-secondary { color: #fff; border-color: #6c7074; background: transparent; }
+
+    .faq-section { padding: 44px 0; border-top: 1px solid var(--line); }
+    .faq-section h2 { font-size: 31px; margin-bottom: 16px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 34px; }
+    details { border-top: 1px solid var(--line); padding: 15px 0; }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 700; padding-right: 24px; }
+    details p { color: var(--muted); margin: 10px 0 0; font-size: 14px; }
+
+    .related { padding: 34px 0 48px; }
+    .related h2 { font-size: 24px; margin-bottom: 14px; }
+    .related-links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .related-links a { border: 1px solid #d5d8da; padding: 9px 13px; color: #555a5f; text-decoration: none; font-size: 14px; background: #fff; }
+    .related-links a:hover { border-color: var(--red); color: var(--red); }
+
+    .site-footer { padding: 42px 0 24px; color: #d7d8d9; background: #252525; }
+    .footer-grid { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 44px; }
+    .site-footer h2 { color: #fff; font-size: 16px; margin-bottom: 10px; }
+    .site-footer p, .site-footer a { color: #bfc2c5; font-size: 14px; }
+    .site-footer a { display: block; text-decoration: none; margin: 4px 0; }
+    .site-footer a:hover { color: #fff; }
+    .footer-bottom { margin-top: 32px; padding-top: 18px; border-top: 1px solid #444; font-size: 12px; color: #92969a; }
+
+    .cookie-banner { position: fixed; z-index: 50; left: 0; right: 0; bottom: 0; padding: 23px max(30px, calc((100% - 1180px) / 2)); color: #fff; background: rgba(35,35,35,.97); box-shadow: 0 -8px 30px rgba(0,0,0,.18); }
+    .cookie-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .cookie-banner h2 { font-size: 16px; margin-bottom: 4px; }
+    .cookie-banner p { max-width: 770px; color: #d5d5d5; font-size: 13px; line-height: 1.5; margin: 0; }
+    .cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; flex-shrink: 0; }
+    .cookie-actions button { min-width: 96px; min-height: 40px; border-radius: 22px; padding: 0 18px; border: 1px solid #fff; background: transparent; color: #fff; font-weight: 700; cursor: pointer; }
+    .cookie-actions .accept { border-color: var(--red); background: var(--red); }
+    .cookie-actions button:hover { filter: brightness(1.12); }
+    .cookie-banner.is-hidden { display: none; }
+
+    @media (max-width: 980px) {
+      .header-inner { gap: 16px; }
+      .brand { min-width: auto; }
+      .main-nav { gap: 15px; }
+      .search input { width: 150px; }
+      .container { width: min(var(--max), calc(100% - 40px)); }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .feature-grid { grid-template-columns: repeat(3, 1fr); }
+      .insights-grid { grid-template-columns: 1fr 1fr; }
+      .cookie-banner { padding-left: 20px; padding-right: 20px; }
+    }
+    @media (max-width: 720px) {
+      body { font-size: 16px; }
+      .header-inner { min-height: 70px; flex-wrap: wrap; padding: 10px 0; }
+      .brand-name { font-size: 24px; }
+      .main-nav { order: 3; width: 100%; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding-top: 9px; }
+      .main-nav a { font-size: 12px; }
+      .header-tools { margin-left: auto; }
+      .search { display: none; }
+      .language { font-size: 12px; }
+      .hero { padding-top: 15px; }
+      .hero-copy { font-size: 16px; }
+      .application-grid, .use-cases, .guide-layout, .faq-grid, .partner-strip, .resource-layout { grid-template-columns: 1fr; }
+      .partner-points { grid-template-columns: 1fr 1fr; }
+      .product-grid { grid-template-columns: 1fr; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .insights-grid { grid-template-columns: 1fr; }
+      .section-heading { display: block; }
+      .section-heading p { margin-top: 7px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 22px; }
+      .cookie-inner { display: block; }
+      .cookie-actions { margin-top: 15px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="https://www.diwei.com/web/image/website/1/logo/Diwei%20Industrial%20Co.%2C%20Ltd.?unique=403c811" class="img img-fluid" alt="Diwei Industrial Co., Ltd." loading="lazy" style="">
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#oem">OEM/ODM</a>
+        <a href="#products">PRODUCTS</a>
+        <a href="#applications">MARKETS</a>
+        <a class="plain" href="#related">ESG</a>
+        <a class="plain" href="#related">ABOUT</a>
+      </nav>
+      <div class="header-tools">
+        <form class="search" role="search" onsubmit="return false">
+          <label class="sr-only" for="site-search">Search</label>
+          <input id="site-search" type="search" placeholder="Search...">
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+        <span class="language">English (US)</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container breadcrumb"><a href="#top">Home</a><span>/</span><a href="#products">Products</a><span>/</span>Mobile Computing Cart</div>
+
+    <section class="container hero" aria-labelledby="page-title">
+      <div class="eyebrow">Mobile Computing Cart</div>
+      <h1 id="page-title">Mobile Computing Carts for Medical &amp; Industrial Workflows</h1>
+      <p class="hero-copy">Diwei mobile computing carts are designed to move laptops, monitors, tablets and computer systems to the point of work. Available in laptop, monitor, dual-monitor, laboratory and telehealth configurations, our carts support medical care and industrial workflows with flexible mounting, ergonomic positioning and OEM/ODM customization for distribution and technology partners.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#oem">Request an OEM/ODM Consultation</a>
+        <a class="button button-secondary" href="#products">Browse Products</a>
+      </div>
+      <div class="application-grid" id="applications">
+        <a class="application-card" href="https://www.diwei.com/medical-care">
+          <div><h2>Medical Care</h2><p>Point-of-care documentation, medical monitoring, telehealth and clinical workstation solutions.</p></div><span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="application-card" href="https://www.diwei.com/industrial">
+          <div><h2>Industrial</h2><p>Factory workstations, laboratory environments, equipment integration and mobile inspection tasks.</p></div><span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+      <nav class="quick-links" aria-label="Product configuration links">
+        <a href="#configuration">Laptop &amp; Tablet Carts</a>
+        <a href="#configuration">Monitor Carts</a>
+        <a href="#configuration">Dual Monitor Carts</a>
+        <a href="#configuration">Medical Trolleys</a>
+        <a href="#configuration">Telehealth Carts</a>
+      </nav>
+      <!-- Business context: OEM 80%, ODM 20%; distributors 90%, agents 10%. Exact ratios are kept as internal strategy context. -->
+      <section class="partner-strip" id="partners" aria-labelledby="partner-title">
+        <div><div class="eyebrow">For Business Partners</div><h2 id="partner-title">Built for Distributors and Agents</h2><p>Our partner-first model is OEM-led, with ODM development support for distributors and agents bringing medical and industrial solutions to their markets.</p></div>
+        <div class="partner-points"><div class="partner-point">OEM Manufacturing</div><div class="partner-point">ODM Development</div><div class="partner-point">Channel Partner Inquiries</div><div class="partner-point">Agent &amp; Solution Partners</div></div>
+      </section>
+    </section>
+
+    <!-- Product list intentionally keeps the current 3-column product-card pattern. -->
+    <section class="container product-section" id="products" aria-labelledby="products-title">
+      <div class="section-heading"><div><div class="eyebrow">Products</div><h2 id="products-title">Browse Mobile Computing Carts</h2></div><p>Explore Diwei laptop, monitor, laboratory and telehealth cart solutions.</p></div>
+      <div class="product-grid">
+        <a class="product-card" href="#" aria-label="Medical Single Monitor Cart with Gas Spring Lift, model 908AA"><div class="product-image"><div class="product-art"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Medical Single Monitor Cart with Gas Spring Lift</h3><p>908AA</p></div></a>
+        <a class="product-card" href="#" aria-label="Medical Laptop Cart, model 9080A"><div class="product-image"><div class="product-art laptop"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Medical Laptop Cart</h3><p>9080A</p></div></a>
+        <a class="product-card" href="#" aria-label="Mobile computing cart with monitor arm, model 901EA"><div class="product-image"><div class="product-art cart"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Mobile Computing Cart with Monitor Arm</h3><p>901EA</p></div></a>
+        <a class="product-card" href="#" aria-label="Mobile Medical Trolley with Gas Spring Lift, model 901MA"><div class="product-image"><div class="product-art cart"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Mobile Medical Trolley with Gas Spring Lift</h3><p>901MA</p></div></a>
+        <a class="product-card" href="#" aria-label="Lab Computer Cart, model 9040A"><div class="product-image"><div class="product-art laptop"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Lab Computer Cart</h3><p>9040A</p></div></a>
+        <a class="product-card" href="#" aria-label="Lab Computer Cart with Single Monitor Arm, model 904AA"><div class="product-image"><div class="product-art"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Lab Computer Cart with Single Monitor Arm</h3><p>904AA</p></div></a>
+        <a class="product-card" href="#" aria-label="Lab Computer Cart with Dual Monitor Arm, model 904BA"><div class="product-image"><div class="product-art dual"><div class="screen"></div><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Lab Computer Cart with Dual Monitor Arm</h3><p>904BA</p></div></a>
+        <a class="product-card" href="#" aria-label="Mobile LCD Cart with Gas Spring Lift, model 9350B"><div class="product-image"><div class="product-art"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Mobile LCD Cart with Gas Spring Lift</h3><p>9350B</p></div></a>
+        <a class="product-card" href="#" aria-label="Mobile Medical Trolley with Gas Spring Lift, model 901LA"><div class="product-image"><div class="product-art cart"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Mobile Medical Trolley with Gas Spring Lift</h3><p>901LA</p></div></a>
+        <a class="product-card" href="#" aria-label="Mobile Laptop Cart, model 900DA"><div class="product-image"><div class="product-art laptop"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Mobile Laptop Cart</h3><p>900DA</p></div></a>
+        <a class="product-card" href="#" aria-label="Mobile computing cart with Dual Monitor Arm, model 902HA"><div class="product-image"><div class="product-art dual"><div class="screen"></div><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Mobile Computing Cart with Dual Monitor Arm</h3><p>902HA</p></div></a>
+        <a class="product-card" href="#" aria-label="Telehealth Mobile Cart, model 9120A"><div class="product-image"><div class="product-art dual"><div class="screen"></div><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Telehealth Mobile Cart</h3><p>9120A</p></div></a>
+        <a class="product-card" href="https://www.diwei.com/shop/mobile-computing-cart-with-monitor-arm-347?page=2&amp;category=6" aria-label="Mobile computing cart with monitor arm, model 901DA"><div class="product-image"><div class="product-art"><div class="screen"></div><div class="column"></div><div class="worktop"></div><div class="base"></div><div class="wheel w1"></div><div class="wheel w2"></div></div></div><div class="product-info"><h3>Mobile Computing Cart with Monitor Arm</h3><p>901DA</p></div></a>
+      </div>
+    </section>
+
+    <section class="configuration-section" id="configuration" aria-labelledby="configuration-title">
+      <div class="container"><div class="eyebrow">Configuration Overview</div><h2 id="configuration-title">Choose a Mobile Computing Cart Configuration</h2><p class="configuration-intro">Use the overview below to identify the cart type that best matches your device and workflow. See the individual product pages for complete specifications and available options.</p>
+        <div class="table-wrap"><table class="config-table"><thead><tr><th>Configuration</th><th>Typical Use</th><th>Diwei Models</th></tr></thead><tbody>
+          <tr><td>Laptop &amp; Tablet Cart</td><td>Mobile documentation and flexible computing</td><td>9080A · 900DA</td></tr>
+          <tr><td>Single Monitor Cart</td><td>Medical or industrial monitor workstation</td><td>908AA · 9350B · 901EA · 901DA</td></tr>
+          <tr><td>Dual Monitor Cart</td><td>Laboratory, diagnostic or multi-screen workflows</td><td>902HA · 904BA</td></tr>
+          <tr><td>Mobile Medical Trolley</td><td>Point-of-care and clinical environments</td><td>901MA · 901LA</td></tr>
+          <tr><td>Telehealth Cart</td><td>Mobile video consultation and remote care</td><td>9120A</td></tr>
+        </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="resource-section" aria-labelledby="resource-title">
+      <div class="container resource-layout">
+        <div><div class="eyebrow">Partner Resources</div><h2 id="resource-title">Product Information for Evaluation</h2><p>Product specifications, dimension drawings, CAD files and distributor catalogs are available by email for product and market evaluation.</p></div>
+        <div class="resource-actions"><a class="button button-primary" href="mailto:diwei@diwei.com?subject=Mobile%20Computing%20Cart%20Product%20Information">Request Product Information</a><a class="button button-secondary" href="mailto:diwei@diwei.com?subject=Distributor%20Catalog%20Request">Request Distributor Catalog</a></div>
+      </div>
+      <div class="container resource-note"><strong>Quality &amp; compliance:</strong> RoHS and REACH compliance information is available upon request for applicable products.</div>
+    </section>
+
+    <section class="features-section" aria-labelledby="features-title">
+      <div class="container"><div class="eyebrow">Product Benefits</div><h2 id="features-title">Features of Diwei's Mobile Computing Carts</h2><p class="features-intro">Diwei mobile computing carts combine mobility, ergonomic work positioning and practical equipment integration. Depending on the model, configurations can support laptops, monitors, tablets and other devices in medical or industrial environments.</p>
+        <div class="feature-grid">
+          <article class="feature-item"><h3>Mobility</h3><p>Mobile bases and casters help move computing equipment between rooms, work areas and points of need.</p></article>
+          <article class="feature-item"><h3>Ergonomic Access</h3><p>Height-adjustable work surfaces and monitor arms support comfortable seated or standing operation.</p></article>
+          <article class="feature-item"><h3>Organization</h3><p>Keyboard trays, shelves, worktops and cable management help keep equipment accessible and organized.</p></article>
+          <article class="feature-item"><h3>Security</h3><p>Selected configurations can include lockable wheels, drawers or device security features where required.</p></article>
+          <article class="feature-item"><h3>Integration</h3><p>Mounting interfaces and accessories can be adapted for medical, laboratory and industrial workflows.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-band" aria-labelledby="applications-title">
+      <div class="container"><div class="eyebrow">Applications</div><h2 id="applications-title">Mobile Computing Cart Applications</h2><p>Move technology closer to where work happens. Diwei supports two core application markets with configurable mobile workstation solutions.</p>
+        <div class="use-cases">
+          <article class="use-case"><h3>Medical Care Applications</h3><p>Support point-of-care documentation, medical monitoring, telehealth consultation and clinical workflows in hospitals, clinics and laboratories.</p><a class="text-link" href="https://www.diwei.com/medical-care">Explore Medical Care Solutions →</a></article>
+          <article class="use-case industrial"><h3>Industrial Applications</h3><p>Bring computers, monitors and control interfaces closer to production lines, machinery and technical work areas for flexible, ergonomic operation.</p><a class="text-link" href="https://www.diwei.com/industrial">Explore Industrial Solutions →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container guide" id="oem" aria-labelledby="guide-title">
+      <div class="guide-layout">
+        <div><div class="eyebrow">Selection Guide</div><h2 id="guide-title">How to Choose a Mobile Computing Cart</h2><p class="lead">The right configuration depends on the device, working environment and workflow requirements.</p>
+          <ul class="checklist"><li><strong>Device type:</strong> laptop, monitor, tablet or desktop computer.</li><li><strong>Work surface:</strong> keyboard tray, monitor arm, shelf or integrated worktop.</li><li><strong>Height adjustment:</strong> fixed, gas spring or electric lift.</li><li><strong>Mobility:</strong> footprint, caster type, stability and working space.</li><li><strong>Integration:</strong> power, cable management, storage and equipment mounting.</li></ul>
+        </div>
+        <aside class="quote-box"><div class="eyebrow">OEM / ODM Partnership</div><h2>Develop Your Mobile Computing Cart Program</h2><p>Share your application, device type, required accessories and quantity with the Diwei team. We can also discuss samples, MOQ, lead time and project-specific documents.</p><div class="proof-grid"><div class="proof-item"><strong>OEM Manufacturing</strong><span>Reliable production support for partner programs</span></div><div class="proof-item"><strong>ODM Development</strong><span>Design, prototype, tooling and engineering support</span></div><div class="proof-item"><strong>Sample Evaluation</strong><span>Sample units available; sample fee applies</span></div><div class="proof-item"><strong>Technical Documents</strong><span>Drawings, specifications, BOM and quality documents by project</span></div></div><a class="button button-primary" href="https://www.diwei.com/contact">Start a Partner Discussion</a></aside>
+      </div>
+    </section>
+
+    <section class="insights-section" aria-labelledby="insights-title">
+      <div class="container"><div class="eyebrow">Medical Care Insights</div><h2 id="insights-title">Learn More About Mobile Medical Workstations</h2><p class="insights-intro">Explore Diwei's insights on clinical mobility, point-of-care workflows and the engineering considerations behind OEM/ODM medical cart solutions.</p>
+        <div class="insights-grid">
+          <article class="insight-card"><div class="tag">Clinical Workflow</div><h3>Maximize Point-of-Care Efficiency: The Diwei Mobile Nursing Workstation Advantage</h3><p>Learn how ergonomic positioning, device integration and stable mobility can support clinical documentation and point-of-care workflows.</p><a class="text-link" href="https://www.diwei.com/blog/blog-7/maximize-point-of-care-efficiency-the-diwei-mobile-nursing-workstation-advantage-64">Read the article →</a></article>
+          <article class="insight-card"><div class="tag">Engineering &amp; OEM/ODM</div><h3>Nurses Walk Miles Each Shift. Is Your Medical Cart Adding Resistance?</h3><p>Explore how caster design, stability, weight distribution and manufacturability affect the real-world mobility of medical carts.</p><a class="text-link" href="https://www.diwei.com/blog/blog-7/medical-cart-mobility-nursing-workflow-oem-design-65">Read the article →</a></article>
+          <article class="insight-card"><div class="tag">Selection Guide</div><h3>Top 8 Benefits of Height Adjustable Mobile Medical Carts</h3><p>Review the benefits of height adjustment, ergonomics, workflow integration and flexible medical cart configurations.</p><a class="text-link" href="https://www.diwei.com/blog/blog-7/top-8-benefits-of-height-adjustable-mobile-medical-carts-for-healthcare-professionals-49">Read the article →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-title"><div class="container"><div class="eyebrow">FAQ</div><h2 id="faq-title">Mobile Computing Cart FAQ</h2><div class="faq-grid"><div><details><summary>What is a mobile computing cart?</summary><p>A mobile computing cart is a wheeled workstation that supports laptops, monitors, tablets or computer systems where work is performed.</p></details><details><summary>Are Diwei carts suitable for medical and industrial applications?</summary><p>Available configurations support medical care, laboratories, telehealth, factories and equipment-integrated work areas. Suitability depends on the selected model and project requirements.</p></details><details><summary>Can Diwei customize a mobile computing cart?</summary><p>Diwei supports OEM/ODM customization for mounting structures, work surfaces, accessories, cable management and device integration.</p></details><details><summary>Can Diwei provide samples for product evaluation?</summary><p>Yes. Sample units can be provided for evaluation, and a sample fee applies. Availability depends on the selected model and configuration.</p></details></div><div><details><summary>What information is needed for a customized cart?</summary><p>Useful information includes the application, device type, screen size, number of monitors, power requirements, accessories, quantity and destination.</p></details><details><summary>What is the MOQ for Mobile Computing Carts?</summary><p>MOQ varies by product type and customization requirements. Standard products may be ordered in smaller quantities for an initial purchase; customized and OEM/ODM projects may require higher MOQs.</p></details><details><summary>What is the lead time?</summary><p>Lead time varies depending on the product type and customization requirements. Contact Diwei for an estimated sample lead time.</p></details><details><summary>Can distributors and agents contact Diwei about product or OEM/ODM projects?</summary><p>Yes. Distributors and agents may contact Diwei through the existing inquiry process. Commercial terms, product availability and project requirements are reviewed case by case.</p></details></div></div></div></section>
+
+    <section class="container related" id="related" aria-labelledby="related-title"><h2 id="related-title">Related Applications and Products</h2><div class="related-links"><a href="https://www.diwei.com/medical-care">Medical Care</a><a href="https://www.diwei.com/industrial">Industrial</a><a href="https://www.diwei.com/shop/category/hospital-medical-trolley-5">Hospital Medical Trolley</a><a href="https://www.diwei.com/shop/category/monitor-arm-stand-18">Monitor Arm / Stand</a><a href="https://www.diwei.com/shop/category/notebook-arm-stand-7">Notebook Arm / Stand</a><a href="https://www.diwei.com/oem-odm">OEM/ODM</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div><h2>DIWEI INDUSTRIAL CO., LTD.</h2><p>Mobile computing cart and ergonomic workstation solutions for medical and industrial applications.</p><p>+886-4-26302152<br>diwei@diwei.com<br>Taichung, Taiwan</p></div><div><h2>OEM/ODM</h2><a href="#oem">Solutions</a><a href="#oem">Collaboration Process</a><a href="#oem">Research &amp; Tech</a><a href="#oem">Manufacturing &amp; Quality</a></div><div><h2>PRODUCTS</h2><a href="https://www.diwei.com/shop/category/mobile-computing-cart-6">Mobile Computing Cart</a><a href="https://www.diwei.com/shop/category/hospital-medical-trolley-5">Hospital Medical Trolley</a><a href="https://www.diwei.com/shop/category/monitor-arm-stand-18">Monitor Arm / Stand</a></div></div><div class="footer-bottom">Copyright © Diwei Industrial Co., Ltd. · Privacy setting</div></div></footer>
+
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookies Information"><div class="cookie-inner"><div><h2>Cookies Information</h2><p>We use cookies and collect data regarding user behaviours to optimise and continuously update this website. You can accept, reject or change your settings.</p></div><div class="cookie-actions"><button class="accept" type="button" onclick="hideCookies()">✓ Accept</button><button type="button" onclick="hideCookies()">× Reject</button><button type="button" onclick="hideCookies()">Change Settings</button></div></div></div>
+  <script>
+    function hideCookies() { document.getElementById('cookie-banner').classList.add('is-hidden'); }
+  </script>
+</body>
+</html>
