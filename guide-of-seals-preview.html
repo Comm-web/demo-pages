@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:image" content="https://www.capind.com.tw/storage/media/news/knowledge/Knowledge-seal_choose_list1.png">
+  <meta property="og:title" content="密封元件挑選指南｜4 步驟判斷密封型式與選型資料｜克普典">
+  <meta property="og:description" content="密封元件怎麼選？用運動型態、介質、溫度壓力、速度與安裝條件，4 步驟整理選型資料，判斷旋轉、往復或靜態密封方向。">
+  <title>密封元件挑選指南｜4 步驟判斷密封型式與選型資料｜克普典</title>
+  <meta name="description" content="密封元件怎麼選？用運動型態、介質、溫度壓力、速度與安裝條件，4 步驟整理選型資料，判斷旋轉、往復或靜態密封方向。">
+
+  <!-- Reuse the live page's public font and stylesheet resources. -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.capind.com.tw/frontend/images/favicon.ico">
+  <link rel="stylesheet" href="https://www.capind.com.tw/frontend/npm_package/bootstrap-4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnresource.gtmc.app/gtfonts/Lato/font-face.css">
+  <link rel="stylesheet" href="https://cdnresource.gtmc.app/gtfonts/Roboto/font-face.css">
+  <link rel="stylesheet" href="https://www.capind.com.tw/frontend/css/mobile-menu.css">
+  <link rel="stylesheet" href="https://www.capind.com.tw/frontend/css/main.min.css">
+  <style>
+    /* Preview-only additions: the page shell and base classes follow the live source. */
+    .preview-strip{padding:9px 15px;background:#163e65;color:#fff;text-align:center;font:700 13px/1.4 Roboto,"Microsoft JhengHei",sans-serif;letter-spacing:.02em}
+    .preview-strip strong{color:#bceeea}
+    .preview-header{border-bottom:1px solid #e7edf1;background:#fff}
+    .preview-header__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1240px;margin:auto;padding:17px 25px}
+    .preview-brand img{display:block;width:155px;max-height:54px}
+    .preview-nav{display:flex;flex-wrap:wrap;gap:8px 21px;margin:0;padding:0;list-style:none}
+    .preview-nav a{color:#263947;font:600 15px/1.4 Roboto,"Microsoft JhengHei",sans-serif;text-decoration:none}
+    .preview-nav a:hover,.preview-nav a:focus{color:#1d7b93;text-decoration:underline}
+    .preview-breadcrumb{max-width:1240px;margin:0 auto;padding:18px 25px 12px;color:#778490;font:13px/1.4 Roboto,"Microsoft JhengHei",sans-serif}
+    .preview-breadcrumb a{color:#526b7c;text-decoration:none}.preview-breadcrumb span{padding:0 7px;color:#a0abb4}
+    .b-new-detail-main{width:100%;padding-bottom:50px}
+    .b-page-header__content{background:#f4f8f9}
+    .b-page-header__wrap{max-width:1120px;margin:auto;padding:39px 25px 31px}
+    .b-page__date{margin-bottom:10px;color:#627682;font:14px/1.4 Roboto,"Microsoft JhengHei",sans-serif}
+    .b-page__title{margin:0;color:#1f3848;font:700 clamp(30px,4vw,43px)/1.26 Roboto,"Microsoft JhengHei",sans-serif}
+    .b-main__content{padding:36px 0 0}
+    .b-detail__wrap{max-width:930px;margin:auto;padding:0 25px}
+    .b-edit__wrap{color:#3e4e57;font:16px/1.9 Roboto,"Microsoft JhengHei",sans-serif}
+    .b-edit__wrap h2{margin:43px 0 15px;padding-left:15px;border-left:4px solid #2b8390;color:#203c4d;font:700 26px/1.35 Roboto,"Microsoft JhengHei",sans-serif}
+    .b-edit__wrap h3{margin:0 0 7px;color:#243f50;font:700 18px/1.45 Roboto,"Microsoft JhengHei",sans-serif}
+    .b-edit__wrap p{margin:0 0 16px}.b-edit__wrap a{color:#146f8d;text-decoration:underline;text-underline-offset:3px}
+    .guide-hero{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(255px,.82fr);gap:28px;align-items:center;margin:0 0 34px;padding:25px;background:#f2f8f8;border-radius:3px}
+    .guide-hero img{width:100%;height:auto;display:block}
+    .guide-hero .intro-label{margin:0 0 8px;color:#147687;font-size:13px;font-weight:800;letter-spacing:.08em}
+    .guide-answer{margin:23px 0 0;padding:18px 20px;border-left:4px solid #d6922d;background:#fff7e9;color:#3c4c55}
+    .guide-answer strong{color:#754a0c}
+    .guide-toc{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0 6px}
+    .guide-toc a{display:block;min-height:70px;padding:12px;border:1px solid #d7e3e4;background:#fff;color:#315361;font-size:14px;font-weight:700;line-height:1.45;text-decoration:none}
+    .guide-toc a:hover,.guide-toc a:focus{border-color:#27808e;box-shadow:0 3px 12px rgba(28,90,102,.12)}
+    .step-no{display:inline-block;margin-right:7px;color:#157889;font-size:12px;letter-spacing:.07em}
+    .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:19px 0}
+    .guide-grid--four{grid-template-columns:repeat(4,1fr)}
+    .guide-card{padding:17px 16px;border:1px solid #d9e4e5;border-top:4px solid #2b8390;background:#fff}
+    .guide-card:nth-child(even){border-top-color:#d6922d}
+    .guide-card h3{font-size:17px}.guide-card p{margin:0;color:#53636c;font-size:14px;line-height:1.72}
+    .guide-table{width:100%;margin:20px 0;border-collapse:collapse;border:1px solid #d9e4e5;font-size:14px;line-height:1.65}
+    .guide-table th{padding:12px 14px;background:#eef6f6;color:#294958;font-weight:800;text-align:left}
+    .guide-table td{padding:14px;border-top:1px solid #d9e4e5;vertical-align:top}
+    .guide-table td:first-child{font-weight:700;color:#274555}
+    .guide-list{margin:15px 0;padding:0;list-style:none;display:grid;gap:10px}
+    .guide-list li{position:relative;padding:12px 14px 12px 38px;background:#f7fafb}
+    .guide-list li:before{content:"";position:absolute;left:16px;top:20px;width:9px;height:9px;border-radius:50%;background:#d6922d}
+    .guide-cta{margin:30px 0;padding:25px;background:#1f5366;color:#fff;text-align:center}
+    .guide-cta h2{margin:0 0 9px!important;padding:0!important;border:0!important;color:#fff!important;font-size:25px!important}
+    .guide-cta p{max-width:680px;margin:0 auto 17px;color:#edf8f8}
+    .guide-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 19px;background:#fff;color:#1b697b!important;font-weight:800;text-decoration:none!important}
+    .guide-related{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:19px 0}
+    .guide-related a{padding:15px;border:1px solid #d8e5e6;background:#fbfdfd;color:#345968;font-weight:700;text-decoration:none}
+    .guide-related a:hover,.guide-related a:focus{border-color:#2b8390;background:#f0f8f8}
+    .preview-footer{padding:34px 25px;background:#203945;color:#c9d6da;text-align:center;font:14px/1.65 Roboto,"Microsoft JhengHei",sans-serif}
+    .preview-footer p{margin:0}.preview-footer a{color:#fff}
+    @media(max-width:767px){.preview-header__inner{padding:14px 18px}.preview-nav{display:none}.preview-breadcrumb{padding:13px 18px 9px}.b-page-header__wrap,.b-detail__wrap{padding-left:18px;padding-right:18px}.guide-hero,.guide-grid,.guide-grid--four,.guide-related{grid-template-columns:1fr}.guide-toc{grid-template-columns:repeat(2,1fr)}.b-edit__wrap{font-size:16px}.b-edit__wrap h2{font-size:24px}}
+    @media print{.preview-strip,.preview-header,.preview-breadcrumb,.preview-footer{display:none}.b-page-header__wrap,.b-detail__wrap{max-width:none}.guide-cta{break-inside:avoid}}
+  </style>
+</head>
+<body class="b-page b-new-detail-page b-page-zh-tw">
+  <div class="preview-strip"><strong>本機預覽：</strong>沿用選型指南原始頁面結構與公開樣式；僅替換文章內容，未發布至網站。</div>
+  <div class="animsition">
+    <div id="b-container" class="container-fluid">
+      <header class="preview-header b-header b-header__tb">
+        <div class="preview-header__inner b-wrap b-header__wrap">
+          <a class="preview-brand b-header__logo-link" href="https://www.capind.com.tw/zh-tw" aria-label="克普典科技首頁">
+            <img src="https://www.capind.com.tw/frontend/images/logo.svg" alt="克普典科技股份有限公司">
+          </a>
+          <nav aria-label="主要導覽">
+            <ul class="preview-nav">
+              <li><a href="https://www.capind.com.tw/zh-tw/product-categories/sealing-elements">產品介紹</a></li>
+              <li><a href="https://www.capind.com.tw/zh-tw/brands">代理品牌</a></li>
+              <li><a href="https://www.capind.com.tw/zh-tw/news">訊息發布</a></li>
+              <li><a href="https://www.capind.com.tw/zh-tw/contact-us">聯絡我們</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="preview-breadcrumb b-breadcrumb">
+        <a href="https://www.capind.com.tw/zh-tw">首頁</a><span>／</span>
+        <a href="https://www.capind.com.tw/zh-tw/new-categories/knowledge-captain-products">綜合產品</a><span>／</span>
+        密封元件挑選指南
+      </div>
+
+      <main class="b-main b-new-detail-main" role="main">
+        <div class="b-page-header__content">
+          <div class="b-page-header__wrap">
+            <div class="b-page-header">
+              <div class="b-page__date b-news-date"><span class="b-page__date-txt b-news-date__txt">2024.09.20</span></div>
+              <div class="b-h1__wrap">
+                <h1 class="b-page__title"><span class="b-page__title-txt">密封元件挑選指南：4 步驟確認密封型式與工況</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="b-main__content">
+          <div class="b-wrap b-detail__wrap b-new__wrap">
+            <article class="b-edit__wrap">
+              <div class="guide-hero">
+                <div>
+                  <p class="intro-label">SEALING SELECTION GUIDE</p>
+                  <p>密封元件的選擇，不應只從材料名稱或既有料號開始。先確認密封位置的運動方式，再整理介質、溫度與壓力、速度，以及尺寸與安裝條件，才能有效縮小可比較的密封型式。</p>
+                  <p>本指南提供工程、設備維護與採購人員使用的第一輪選型流程。完成這四步後，您能判斷應優先查看旋轉、往復或靜態密封，並備妥後續確認產品所需的資料。</p>
+                </div>
+                <img src="https://www.capind.com.tw/storage/media/news/knowledge/Knowledge-seal_choose.png" alt="密封元件選型流程">
+              </div>
+
+              <div class="guide-answer">
+                <strong>快速結論：</strong>先分型式，再比工況。密封位置的運動型態決定初步密封方向；介質、溫度、壓力、速度與安裝條件，決定後續需要確認的材料與結構。遇到高溫、高壓、高速、污染或既有洩漏時，請轉往相對應專題確認，不要只依本頁做結論。
+              </div>
+
+              <nav class="guide-toc" aria-label="選型流程">
+                <a href="#step-1"><span class="step-no">STEP 01</span><br>判斷運動型態</a>
+                <a href="#step-2"><span class="step-no">STEP 02</span><br>整理工況資料</a>
+                <a href="#step-3"><span class="step-no">STEP 03</span><br>分流特殊風險</a>
+                <a href="#step-4"><span class="step-no">STEP 04</span><br>準備確認資料</a>
+              </nav>
+
+              <section id="step-1">
+                <h2>步驟 1：先確認密封位置的運動型態</h2>
+                <p>這一步不是決定最終產品，而是先把選項縮小到正確的密封方向。請先判斷密封面是否有相對運動，以及運動是旋轉、直線往復，或完全固定。</p>
+                <div class="guide-grid">
+                  <div class="guide-card">
+                    <h3>動態－旋轉油封</h3>
+                    <p>密封處是旋轉軸時，先從旋轉密封方向查看。請一併記錄轉速、軸徑與軸表面狀況。</p>
+                  </div>
+                  <div class="guide-card">
+                    <h3>動態－往復油封</h3>
+                    <p>活塞或活塞桿作直線來回運動時，先從往復密封方向查看。請記錄行程、速度與密封位置。</p>
+                  </div>
+                  <div class="guide-card">
+                    <h3>靜態油封</h3>
+                    <p>接合面沒有相對運動時，先從靜態密封方向查看。請記錄接合形式、壓力與可用空間。</p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="step-2">
+                <h2>步驟 2：整理四類工況資料，避免只憑名稱選型</h2>
+                <p>同一類密封元件可能因工作條件不同而需要不同的材料或結構。開始比較前，請先整理下列資料；不確定時，可先從設備規格、維護紀錄或既有料號取得。</p>
+                <div class="guide-grid guide-grid--four">
+                  <div class="guide-card"><h3>接觸介質</h3><p>確認實際接觸的是何種油、水、氣體或其他介質；若有添加劑、清洗液或混合液，也一併註明。</p></div>
+                  <div class="guide-card"><h3>溫度與壓力</h3><p>記錄正常工作範圍與可能的最高值，並說明壓力是穩定、脈動或瞬間升高。</p></div>
+                  <div class="guide-card"><h3>速度與運動條件</h3><p>旋轉應提供轉速；往復應提供行程與循環頻率。這些條件會影響摩擦、發熱與磨耗風險。</p></div>
+                  <div class="guide-card"><h3>尺寸與安裝環境</h3><p>準備軸徑或溝槽尺寸、可用空間、表面狀況與污染來源；圖面或現有料號可協助交叉確認。</p></div>
+                </div>
+              </section>
+
+              <section id="step-3">
+                <h2>步驟 3：遇到這些情況，轉往對應專題確認</h2>
+                <p>本指南負責建立判斷順序，不取代失效診斷或嚴苛工況設計。當下列情況成立時，請接續閱讀專題文章，再回到產品型式與工程確認。</p>
+                <table class="guide-table">
+                  <thead><tr><th>目前情況</th><th>本頁做到哪裡</th><th>下一步</th></tr></thead>
+                  <tbody>
+                    <tr><td>設備已發生漏油、滲漏、磨耗，或安裝後很快失效</td><td>確認密封方向與已知工況；不在本頁判定根因。</td><td><a href="https://www.capind.com.tw/zh-tw/news/industrial-sealing-leak-causes-and-solutions">查看機台密封件洩漏常見原因解析</a></td></tr>
+                    <tr><td>高溫、高壓、特殊介質，或懷疑材料膨脹、硬化、擠出</td><td>記錄介質、溫壓與壓力型態；不在本頁列材料對照或防擠出設計。</td><td><a href="https://www.capind.com.tw/zh-tw/news/seals-failure-high-temperature-high-pressure">查看高溫／高壓密封失效專題</a></td></tr>
+                    <tr><td>高速、污染、粉塵、戶外或需多重密封配置</td><td>確認速度、污染來源與空間限制；不在本頁展開結構配置。</td><td><a href="https://www.capind.com.tw/zh-tw/news/sealing-solutions-extreme-environments-case-studies">查看嚴苛工況密封設計專題</a></td></tr>
+                    <tr><td>要規劃更換時機、備品與降低停機風險</td><td>保留設備與使用條件紀錄；不在本頁建立維護制度。</td><td><a href="https://www.capind.com.tw/zh-tw/news/seal-component-lifespan-equipment-reliability">查看壽命與可靠度文章</a><br><a href="https://www.capind.com.tw/zh-tw/news/capind-sealing-strategy-reduce-downtime-risk">查看降低停機策略文章</a></td></tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <section id="step-4">
+                <h2>步驟 4：確認產品或提出需求前，準備這 6 項資訊</h2>
+                <p>完整的工況資料有助於縮小確認範圍。若要查看產品型式或進一步洽詢，建議先整理以下資訊：</p>
+                <ul class="guide-list">
+                  <li><strong>設備與應用：</strong>設備名稱、使用位置與密封用途。</li>
+                  <li><strong>運動型態：</strong>旋轉、往復或靜態，以及密封位置。</li>
+                  <li><strong>接觸介質：</strong>流體或氣體名稱，以及已知添加物。</li>
+                  <li><strong>溫度、壓力與速度：</strong>正常範圍、峰值與運轉型態。</li>
+                  <li><strong>尺寸或圖面：</strong>軸徑、溝槽、可用空間或設備圖面。</li>
+                  <li><strong>既有料號與現況：</strong>既有零件料號、使用時間，以及是否已有洩漏或磨耗情況。</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2>選型前常見問題</h2>
+                <h3>可以只依既有料號或「油封」名稱選擇嗎？</h3>
+                <p>不建議。既有料號是重要線索，但若設備的介質、溫度、壓力、速度或安裝條件已改變，應重新確認是否仍符合使用條件。</p>
+                <h3>只要分出旋轉、往復與靜態，就能決定密封件嗎？</h3>
+                <p>這是第一步，不是最終結論。運動型態可縮小產品方向；後續仍需依介質、溫壓、速度、尺寸與安裝條件確認材料與結構。</p>
+                <h3>設備已經洩漏，還應該先看這篇嗎？</h3>
+                <p>本頁可協助整理設備條件；但若要判斷洩漏原因、安裝問題或配合件狀況，請優先查看密封件洩漏原因解析，再進行後續選型。</p>
+                <h3>高溫或高壓下，能否直接在本頁決定材料？</h3>
+                <p>不建議只憑材料名稱判定。請先記錄實際介質、溫度與壓力型態，並查看高溫高壓失效專題，確認是否涉及材料相容性、擠出或結構設計問題。</p>
+              </section>
+
+              <div class="guide-cta">
+                <h2>已完成初步判斷？查看對應密封元件產品</h2>
+                <p>當您已確認密封位置的運動型態，並整理好主要工況資料後，可查看旋轉、往復與靜態密封元件的對應型式，再透過既有詢價或聯絡流程提出需求。</p>
+                <a class="guide-button" href="https://www.capind.com.tw/zh-tw/product-categories/sealing-elements">查看密封元件產品型式</a>
+              </div>
+
+              <section>
+                <h2>延伸閱讀</h2>
+                <div class="guide-related">
+                  <a href="https://www.capind.com.tw/zh-tw/news/industrial-sealing-leak-causes-and-solutions">設備已洩漏？先看常見原因與排查方向</a>
+                  <a href="https://www.capind.com.tw/zh-tw/news/seals-failure-high-temperature-high-pressure">高溫高壓下的材料、擠出與失效問題</a>
+                  <a href="https://www.capind.com.tw/zh-tw/news/sealing-solutions-extreme-environments-case-studies">高速、污染與嚴苛工況的密封設計</a>
+                  <a href="https://www.capind.com.tw/zh-tw/news/seal-component-lifespan-equipment-reliability">密封元件壽命與設備可靠度</a>
+                </div>
+              </section>
+            </article>
+          </div>
+        </div>
+      </main>
+      <footer class="preview-footer">
+        <p>克普典科技股份有限公司｜密封元件挑選指南本機改寫預覽</p>
+        <p><a href="https://www.capind.com.tw/zh-tw/contact-us">聯絡我們</a>　｜　<a href="https://www.capind.com.tw/zh-tw/product-categories/sealing-elements">密封元件產品</a></p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
