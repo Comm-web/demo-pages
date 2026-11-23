@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="瑞宥 Rextron 行銷價值回顧：搜尋需求、國際流量、生成式 AI 可見度、B2B 內容機會與下一階段行銷建議。">
+  <title>瑞宥 Rextron｜行銷價值與成長機會</title>
+  <style>
+    :root {
+      --ink: #172b3d;
+      --muted: #5e7080;
+      --line: #dbe4ea;
+      --paper: #ffffff;
+      --canvas: #edf2f5;
+      --navy: #15334a;
+      --teal: #087e83;
+      --teal-pale: #e7f5f4;
+      --gold: #b7791f;
+      --gold-pale: #fff5df;
+      --red: #9d3d38;
+      --red-pale: #fff0ed;
+      --blue-pale: #edf4fb;
+      --shadow: 0 14px 42px rgba(20, 45, 65, .08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.68;
+    }
+    a { color: #076b78; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:hover { color: #034a56; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #e0e7ec;
+      border-radius: 5px;
+      background: #f5f7f9;
+      color: #23465c;
+      font-family: Consolas, "Cascadia Code", monospace;
+      font-size: .92em;
+      overflow-wrap: anywhere;
+    }
+    .page { width: min(1120px, calc(100% - 36px)); margin: 28px auto 56px; }
+    .cover {
+      position: relative;
+      overflow: hidden;
+      padding: 40px 44px 36px;
+      border-radius: 22px;
+      background: linear-gradient(125deg, #15334a 0%, #1b5265 62%, #087e83 100%);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+    .cover::after {
+      position: absolute;
+      right: -68px;
+      bottom: -145px;
+      width: 370px;
+      height: 370px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      box-shadow: 0 0 0 34px rgba(255,255,255,.035), 0 0 0 74px rgba(255,255,255,.025);
+      content: "";
+    }
+    .eyebrow { position: relative; z-index: 1; margin: 0 0 12px; color: #b8e7e2; font-size: .82rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    .cover h1 { position: relative; z-index: 1; max-width: 820px; margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.18; letter-spacing: -.025em; }
+    .cover .subtitle { position: relative; z-index: 1; max-width: 760px; margin: 0; color: #e4f0f3; font-size: 1.06rem; }
+    .meta { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 9px; margin-top: 22px; }
+    .meta span { padding: 6px 10px; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; background: rgba(255,255,255,.08); color: #f3fbfc; font-size: .78rem; }
+    .toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: #f9fbfc; }
+    .toc a { padding: 5px 9px; border-radius: 8px; color: var(--navy); font-size: .84rem; font-weight: 700; text-decoration: none; }
+    .toc a:hover { background: var(--teal-pale); }
+    .card, section.panel { margin-top: 18px; padding: 28px 30px; border: 1px solid var(--line); border-radius: 17px; background: var(--paper); box-shadow: 0 5px 18px rgba(20,45,65,.035); }
+    section.panel { scroll-margin-top: 18px; }
+    h2 { margin-bottom: 14px; color: var(--navy); font-size: 1.45rem; line-height: 1.3; }
+    h3 { margin: 24px 0 9px; color: #21495d; font-size: 1.06rem; }
+    .section-kicker { margin-bottom: 6px; color: var(--teal); font-size: .76rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .lead { color: #334c5e; font-size: 1.08rem; }
+    .callout { margin: 16px 0; padding: 16px 18px; border-left: 4px solid var(--teal); border-radius: 9px; background: var(--teal-pale); }
+    .callout strong { color: #075d62; }
+    .callout.caution { border-left-color: var(--gold); background: var(--gold-pale); }
+    .callout.caution strong { color: #84520b; }
+    .callout.alert { border-left-color: var(--red); background: var(--red-pale); }
+    .callout.alert strong { color: #85352f; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+    .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .mini {
+      padding: 17px 18px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fbfcfd;
+    }
+    .mini h3 { margin: 0 0 7px; font-size: .99rem; }
+    .mini p:last-child { margin-bottom: 0; }
+    .tag { display: inline-block; margin: 0 6px 7px 0; padding: 3px 8px; border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .02em; }
+    .tag.fact { background: #e7f4ed; color: #226344; }
+    .tag.hyp { background: #fff2d8; color: #83570f; }
+    .tag.missing { background: #f3eafa; color: #6b4287; }
+    .tag.internal { background: #edf1f6; color: #425c70; }
+    .tag.customer { background: #e9f3fb; color: #245d83; }
+    table { width: 100%; border-collapse: collapse; margin: 13px 0 4px; font-size: .9rem; }
+    th, td { padding: 12px 13px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: #f1f6f8; color: #24485b; font-weight: 800; }
+    td p:last-child { margin-bottom: 0; }
+    .small { color: var(--muted); font-size: .83rem; }
+    .metric { color: var(--navy); font-size: 1.45rem; font-weight: 850; letter-spacing: -.02em; }
+    .viz-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; margin: 14px 0; }
+    .viz-card { min-width: 0; margin: 0; padding: 17px 18px; border: 1px solid var(--line); border-radius: 13px; background: #fbfcfd; }
+    .viz-card figcaption { margin-bottom: 5px; color: #21495d; font-size: .99rem; font-weight: 800; }
+    .viz-kpi { margin: 8px 0 10px; color: var(--navy); font-size: 2rem; font-weight: 850; letter-spacing: -.03em; line-height: 1.1; }
+    .viz-kpi span { margin-left: 5px; color: var(--muted); font-size: .83rem; font-weight: 700; letter-spacing: 0; }
+    .viz-axis { display: flex; justify-content: space-between; margin: 0 0 5px; color: var(--muted); font-size: .72rem; }
+    .viz-track { height: 13px; overflow: hidden; border-radius: 999px; background: #e5edf1; }
+    .viz-fill { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #087e83, #39a7a0); }
+    .viz-total { margin: 7px 0 12px; color: var(--muted); font-size: .82rem; }
+    .bar-chart { display: grid; gap: 9px; margin: 10px 0 0; padding: 0; list-style: none; }
+    .bar-row { display: grid; grid-template-columns: 98px minmax(40px, 1fr) 112px; align-items: center; gap: 9px; font-size: .8rem; }
+    .bar-label { color: #344d5d; font-weight: 700; }
+    .bar-track { height: 11px; overflow: hidden; border-radius: 999px; background: #e5edf1; }
+    .bar-fill { display: block; height: 100%; min-width: 2px; border-radius: inherit; background: var(--teal); }
+    .bar-value { color: var(--navy); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+    .month-chart-wrap { overflow-x: auto; margin: 12px 0 4px; }
+    .month-chart { display: block; width: 100%; min-width: 680px; height: auto; }
+    .month-chart text { fill: #526878; font-family: "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+    .month-chart .value { fill: #15334a; font-size: 13px; font-weight: 800; }
+    .month-chart .month { font-size: 12px; }
+    .month-chart .gridline { stroke: #dbe4ea; stroke-width: 1; }
+    .month-chart .bar { fill: #168b8c; }
+    .month-chart .partial { fill: #d19a37; }
+    .timeline { display: grid; grid-template-columns: 145px 1fr; gap: 0 16px; margin-top: 12px; }
+    .timeline div { padding: 11px 0; border-bottom: 1px solid var(--line); }
+    .timeline .date { color: var(--teal); font-weight: 800; }
+    .checklist { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0; list-style: none; }
+    .checklist li { padding: 12px 13px; border: 1px solid var(--line); border-radius: 10px; background: #fbfcfd; }
+    .checklist li::before { margin-right: 8px; color: var(--teal); font-weight: 900; content: "□"; }
+    .steps { counter-reset: step; padding: 0; list-style: none; }
+    .steps li { position: relative; margin: 0 0 13px; padding: 0 0 13px 47px; border-bottom: 1px solid var(--line); }
+    .steps li::before { position: absolute; left: 0; top: 0; display: grid; width: 31px; height: 31px; place-items: center; border-radius: 50%; background: var(--teal-pale); color: var(--teal); font-weight: 900; counter-increment: step; content: counter(step); }
+    details { margin: 13px 0; padding: 14px 16px; border: 1px solid var(--line); border-radius: 11px; background: #fbfcfd; }
+    summary { color: var(--navy); cursor: pointer; font-weight: 800; }
+    details[open] summary { margin-bottom: 10px; }
+    .internal-box { border-color: #d7e0e8; background: #f3f6f9; }
+    .script { padding: 19px 21px; border: 1px solid #cbe3e3; border-radius: 12px; background: #f1fbfa; color: #213d4a; }
+    .script p:last-child { margin-bottom: 0; }
+    .source-list { padding-left: 20px; }
+    .source-list li { margin: 8px 0; }
+    .footer { margin-top: 18px; padding: 20px 8px 0; color: var(--muted); text-align: center; font-size: .8rem; }
+    .nowrap { white-space: nowrap; }
+    @media (max-width: 760px) {
+      .page { width: min(100% - 20px, 720px); margin: 10px auto 28px; }
+      .cover { padding: 28px 23px; border-radius: 16px; }
+      .card, section.panel { padding: 21px 18px; }
+      .grid, .grid.three, .checklist { grid-template-columns: 1fr; }
+      .viz-grid { grid-template-columns: 1fr; }
+      .bar-row { grid-template-columns: 90px minmax(34px, 1fr) 102px; gap: 7px; font-size: .76rem; }
+      table { display: block; overflow-x: auto; }
+      .timeline { grid-template-columns: 1fr; }
+      .timeline div { padding: 7px 0; }
+      .timeline .date { padding-top: 14px; border-bottom: 0; }
+    }
+    @media print {
+      @page { margin: 14mm; }
+      body { background: #fff; color: #111; font-size: 10pt; }
+      .page { width: 100%; margin: 0; }
+      .cover { padding: 25px 28px; border-radius: 0; box-shadow: none; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .cover::after, .toc { display: none; }
+      .card, section.panel { break-inside: avoid; margin-top: 10px; padding: 18px; box-shadow: none; }
+      h2, h3 { break-after: avoid; }
+      a { color: #164e63; }
+      a::after { content: ""; }
+      details { break-inside: avoid; }
+      details > * { display: block !important; }
+      .footer { padding-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="cover">
+      <p class="eyebrow">Rextron · 行銷價值回顧</p>
+      <h1>把搜尋能見度，接上 B2B 成長機會</h1>
+      <p class="subtitle">回顧瑞宥已累積的搜尋與 AI 入口、買家需求洞察，以及下一階段能轉化為詢問的行銷機會</p>
+      <div class="meta">
+        <span>業務售服會議資料</span>
+        <span>整理日期：2026-11-23</span>
+        <span>以 B2B 與國際市場為主軸</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="文件導覽">
+      <a href="#summary">行銷價值摘要</a>
+      <a href="#results">搜尋與流量成果</a>
+      <a href="#ai">2026 AI 搜尋入口</a>
+      <a href="#contact">2026 聯絡互動</a>
+      <a href="#insight">買家與品牌機會</a>
+      <a href="#seo">SEO 與 H-tags 判讀</a>
+      <a href="#seogeo">SEO／GEO 關鍵因素</a>
+      <a href="#growth">內容與廣告方向</a>
+      <a href="#meeting">會議建議與下一步</a>
+      <a href="#sources">資料來源</a>
+    </nav>
+
+    <section class="panel" id="summary">
+      <p class="section-kicker">Executive readout</p>
+      <h2>這段行銷工作，為瑞宥建立了什麼</h2>
+      <p class="lead">本輪已完成六個月搜尋與 GA4 回顧、2026 AI 報表核對、ATEN／StarTech 頁面抽查、19 題 AI 買家問題測試，以及網站內容資產盤點，讓下一步能依買家需求與商業優先順序推進。</p>
+      <div class="grid three">
+        <article class="mini">
+          <span class="tag fact">搜尋基礎</span>
+          <h3>確認網站已有國際自然搜尋觸及</h3>
+          <p>六個月 GSC 記錄 15,056 次搜尋點擊，其中 12,345 次來自台灣以外；GA4 同期記錄 22,151 個自然搜尋工作階段。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">新入口可觀測</span>
+          <h3>開始量到生成式 AI 曝光與到訪</h3>
+          <p>2026 年 GSC 生成式 AI 報表約 31,900 次曝光；GA4 AI 流量報表記錄 2,206 個來源工作階段，包含 ChatGPT、Gemini 與 Perplexity。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">買家洞察</span>
+          <h3>找出品牌內容的下一個缺口</h3>
+          <p>19 題 AI 買家問題抽查顯示，瑞宥的製造與 OEM/ODM 身分較容易被辨識；應用解決方案與產業專業的內容仍有擴展空間。</p>
+        </article>
+      </div>
+      <div class="callout">
+        <strong>會議主軸：</strong>先讓客戶看見已累積的搜尋觸及與新流量入口，再一起確認哪些市場、產品與 B2B 買家最值得優先深化，將可見度往合適的專案詢問推進。
+      </div>
+      <p class="small">目前可量化的是搜尋與網站流量；詢問品質及成交尚未與流量報表對照，因此不把流量數字宣稱為新增詢問或營收。</p>
+    </section>
+
+    <section class="panel" id="results">
+      <p class="section-kicker">Search performance</p>
+      <h2>搜尋與流量：已建立的國際需求底盤</h2>
+      <p class="lead">2025-11-01 至 2026-04-30 的報表顯示，瑞宥網站已在多個市場承接產品與解決方案相關搜尋需求。</p>
+      <div class="grid three">
+        <article class="mini">
+          <span class="tag fact">Google Search Console</span>
+          <h3>15,056 次搜尋點擊</h3>
+          <div class="metric">1,942,061</div>
+          <p>同期搜尋曝光；點擊反映買家已從 Google 進入瑞宥網站。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">國際市場</span>
+          <h3>約 82% 點擊來自台灣以外</h3>
+          <div class="metric">12,345</div>
+          <p>非台灣搜尋點擊，為瑞宥以 B2B 國際市場拓展建立可衡量的觸及基礎。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">Google Analytics 4</span>
+          <h3>22,151 個自然搜尋工作階段</h3>
+          <div class="metric">49,100</div>
+          <p>自然搜尋帶來的頁面瀏覽；同期全站為 75,222 個工作階段。</p>
+        </article>
+      </div>
+      <h3>搜尋需求已涵蓋產品與採購意圖</h3>
+      <p>GSC 查詢包含 <strong>USB extender、KVM switch、multi switch USB、200m USB extender</strong> 等產品詞，也涵蓋 HDMI splitter 等影音傳輸需求。這些查詢可用來安排產品頁、應用頁與市場內容的優先順序。</p>
+      <div class="callout caution">
+        <strong>讀數註記：</strong>Google 曾公告 2025-05-13 至 2026-04-27 的部分 GSC 曝光記錄有誤，點擊不受影響。因此本段以點擊與 GA4 工作階段作為主要觸及指標，曝光數作為背景參考。<a href="https://support.google.com/webmasters/answer/6211453?hl=en" target="_blank" rel="noopener">Google Search Console 資料異常說明</a>
+      </div>
+      <p class="small">2025 年秋季的波動可作為背景追查：Google 官方記錄 August 2025 spam update 於 8/26 至 9/22 進行。事件時間相近本身不能確認瑞宥受影響，後續可再依市場、查詢與頁面表現核對。<a href="https://status.search.google.com/incidents/a7Aainy6E9rZsmfq82xt" target="_blank" rel="noopener">Google 更新紀錄</a></p>
+    </section>
+
+    <section class="panel" id="ai">
+      <p class="section-kicker">AI discovery · 2026</p>
+      <h2>2026 年，瑞宥已出現在生成式 AI 搜尋與導流路徑</h2>
+      <p class="lead">GSC 與 GA4 提供兩個互補訊號：買家在 Google 生成式 AI 搜尋中看見瑞宥，以及從 AI 平台進入瑞宥網站。</p>
+      <div class="viz-grid" aria-label="2026 年 GSC 生成式 AI 曝光與 GA4 AI 來源工作階段圖表">
+        <figure class="viz-card">
+          <figcaption>Google 搜尋生成式 AI 曝光｜GSC</figcaption>
+          <div class="viz-kpi">31,900<span>impressions</span></div>
+          <div class="viz-axis"><span>0</span><span>35,000</span></div>
+          <div class="viz-track" role="img" aria-label="2026 年 8 月 22 日至 11 月 21 日約 31,900 次曝光；此圖刻度上限為 35,000">
+            <span class="viz-fill" style="width:91.1%"></span>
+          </div>
+          <p class="small">期間：2026-08-22 至 2026-11-21。Google 記錄 11/09–11/11 有報表曝光記錄錯誤。</p>
+        </figure>
+        <figure class="viz-card">
+          <figcaption>AI 平台導入網站的工作階段｜GA4</figcaption>
+          <div class="viz-total">2026-01-01 至 2026-11-23｜總計 2,206</div>
+          <ul class="bar-chart" aria-label="2026 年各 AI 來源工作階段">
+            <li class="bar-row"><span class="bar-label">ChatGPT</span><span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:84.59%"></span></span><span class="bar-value">1,866</span></li>
+            <li class="bar-row"><span class="bar-label">Gemini</span><span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:5.67%"></span></span><span class="bar-value">125</span></li>
+            <li class="bar-row"><span class="bar-label">Perplexity</span><span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:5.62%"></span></span><span class="bar-value">124</span></li>
+            <li class="bar-row"><span class="bar-label">Claude</span><span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:2.04%"></span></span><span class="bar-value">45</span></li>
+            <li class="bar-row"><span class="bar-label">Copilot</span><span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:1.63%"></span></span><span class="bar-value">36</span></li>
+            <li class="bar-row"><span class="bar-label">其他來源</span><span class="bar-track" aria-hidden="true"><span class="bar-fill" style="width:.45%"></span></span><span class="bar-value">10</span></li>
+          </ul>
+          <p class="small">Perplexity 合併 perplexity.ai 與 perplexity 兩個來源名稱。</p>
+        </figure>
+      </div>
+      <div class="callout">
+        <strong>可向客戶說明：</strong>「2026 年的報表已看見瑞宥在 Google 生成式 AI 搜尋中的曝光，也看到 AI 平台實際帶來網站訪客。這代表 AI 已是值得納入品牌能見度與內容規劃的接觸入口；下一步可追蹤哪些產品頁與應用內容最能承接這些訪客。」
+      </div>
+      <p class="small">GSC 曝光與 GA4 工作階段期間及定義不同，各自呈現，不合併計算。兩者代表可觀測的接觸與到訪，不直接等於詢問。</p>
+    </section>
+
+    <section class="panel" id="contact">
+      <p class="section-kicker">Contact interaction · 2026</p>
+      <h2>GA4 持續記錄到聯絡互動，月別走勢有明顯起伏</h2>
+      <p class="lead">2026-01-01 至 2026-11-23，GA4 的主要 <code>contact</code> 事件共記錄 1,004 次、涉及 499 位使用者。月資料顯示年內有低點也有回升；完整月份中，7 月最高 120 次、5 月最低 54 次，10 月為 113 次。</p>
+      <div class="grid three">
+        <article class="mini">
+          <span class="tag fact">全年截至 11/23</span>
+          <h3>1,004 次 contact 事件</h3>
+          <p>GA4 同一報表期間記錄 499 位觸發此事件的使用者。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">1–10 月完整月份</span>
+          <h3>每月 54–120 次</h3>
+          <p>5 月落至低點，6 月回升至 104 次；10 月為 113 次，與 1 月的 115 次接近。</p>
+        </article>
+        <article class="mini">
+          <span class="tag customer">11 月截至 23 日</span>
+          <h3>46 次 contact 事件</h3>
+          <p>未滿整月；按日簡單平均約 2.0 次，低於 10 月約 3.6 次，值得和後續月份及業務詢問紀錄一起追蹤。</p>
+        </article>
+      </div>
+      <figure class="viz-card" style="margin-top:14px">
+        <figcaption>GA4「contact」事件｜每月事件次數</figcaption>
+        <div class="month-chart-wrap">
+          <svg class="month-chart" viewBox="0 0 760 245" role="img" aria-labelledby="contact-chart-title contact-chart-desc">
+            <title id="contact-chart-title">2026 年 GA4 contact 事件月趨勢</title>
+            <desc id="contact-chart-desc">一月至十月完整月份事件數依序為 115、61、105、100、54、104、120、87、99、113；十一月一日至二十三日為 46 次。</desc>
+            <line class="gridline" x1="48" y1="190" x2="742" y2="190"></line>
+            <line class="gridline" x1="48" y1="144" x2="742" y2="144"></line>
+            <line class="gridline" x1="48" y1="98" x2="742" y2="98"></line>
+            <line class="gridline" x1="48" y1="52" x2="742" y2="52"></line>
+            <text x="39" y="194" text-anchor="end" font-size="11">0</text>
+            <text x="39" y="148" text-anchor="end" font-size="11">40</text>
+            <text x="39" y="102" text-anchor="end" font-size="11">80</text>
+            <text x="39" y="56" text-anchor="end" font-size="11">120</text>
+            <rect class="bar" x="65" y="58" width="36" height="132" rx="5"></rect><text class="value" x="83" y="51" text-anchor="middle">115</text><text class="month" x="83" y="215" text-anchor="middle">1月</text>
+            <rect class="bar" x="128" y="120" width="36" height="70" rx="5"></rect><text class="value" x="146" y="113" text-anchor="middle">61</text><text class="month" x="146" y="215" text-anchor="middle">2月</text>
+            <rect class="bar" x="191" y="69" width="36" height="121" rx="5"></rect><text class="value" x="209" y="62" text-anchor="middle">105</text><text class="month" x="209" y="215" text-anchor="middle">3月</text>
+            <rect class="bar" x="254" y="75" width="36" height="115" rx="5"></rect><text class="value" x="272" y="68" text-anchor="middle">100</text><text class="month" x="272" y="215" text-anchor="middle">4月</text>
+            <rect class="bar" x="317" y="128" width="36" height="62" rx="5"></rect><text class="value" x="335" y="121" text-anchor="middle">54</text><text class="month" x="335" y="215" text-anchor="middle">5月</text>
+            <rect class="bar" x="380" y="71" width="36" height="119" rx="5"></rect><text class="value" x="398" y="64" text-anchor="middle">104</text><text class="month" x="398" y="215" text-anchor="middle">6月</text>
+            <rect class="bar" x="443" y="52" width="36" height="138" rx="5"></rect><text class="value" x="461" y="45" text-anchor="middle">120</text><text class="month" x="461" y="215" text-anchor="middle">7月</text>
+            <rect class="bar" x="506" y="90" width="36" height="100" rx="5"></rect><text class="value" x="524" y="83" text-anchor="middle">87</text><text class="month" x="524" y="215" text-anchor="middle">8月</text>
+            <rect class="bar" x="569" y="76" width="36" height="114" rx="5"></rect><text class="value" x="587" y="69" text-anchor="middle">99</text><text class="month" x="587" y="215" text-anchor="middle">9月</text>
+            <rect class="bar" x="632" y="60" width="36" height="130" rx="5"></rect><text class="value" x="650" y="53" text-anchor="middle">113</text><text class="month" x="650" y="215" text-anchor="middle">10月</text>
+            <rect class="partial" x="695" y="137" width="36" height="53" rx="5"></rect><text class="value" x="713" y="130" text-anchor="middle">46*</text><text class="month" x="713" y="215" text-anchor="middle">11月</text>
+          </svg>
+        </div>
+        <p class="small">* 11 月只統計 11/1–11/23；圖表以事件次數呈現，刻度上限約 130 次。</p>
+      </figure>
+      <div class="callout">
+        <strong>怎麼解讀：</strong>不能簡化成「全年都沒有減少」或「詢問已恢復」。較準確的說法是：GA4 的 contact 事件在 2026 年持續被記錄，1–10 月月量波動明顯，10 月回到接近年初的水準；11 月截至 23 日的日均事件量較 10 月低，需續看整月資料。這項事件數據是網站互動訊號，不等於有效 B2B 詢問、商機或成交。
+      </div>
+      <p class="small">報表中其他名稱含 contact 的事件（contact_partner、contact_contactus、contact_wheretobuy、contact_taa_compliant）合計另有 159 次；連同主要 contact 事件共 1,163 次。此為事件名稱彙總，不應直接當成詢問件數。</p>
+    </section>
+
+    <section class="panel" id="insight">
+      <p class="section-kicker">B2B positioning · 延續前次討論</p>
+      <h2>把「製造商」優勢，延伸成「方案夥伴」印象</h2>
+      <p class="lead">本次沿用前次報告提出的方向；目前沒有新的進展資訊可供更新，因此仍作為待確認的討論方向呈現，不視為品牌轉型或方案夥伴策略已經啟動。</p>
+      <div class="callout">
+        <strong>目前掌握的商模背景：</strong>瑞宥仍以 B2B 為主，具 OEM/ODM 製造基礎，近年探索品牌發展，也可能服務工程承包商、系統整合商等專案角色。「方案夥伴」是把既有製造優勢轉譯成買家易理解價值的內容方向，仍需由客戶與業務確認優先市場、買家角色及實際可提供的服務範圍。
+      </div>
+      <div class="grid">
+        <article class="mini">
+          <span class="tag fact">本次補充的市場觀察</span>
+          <h3>19 題 AI 買家問題抽查</h3>
+          <p>題目涵蓋認知、方案評估、供應商選擇與品牌。這次抽查中，品牌及製造商類問題較容易辨識瑞宥；一般應用解題與方案比較類問題仍有拓展空間。此為有限題目抽查，不代表所有市場或平台的整體排名。</p>
+        </article>
+        <article class="mini">
+          <span class="tag hyp">待確認的內容機會</span>
+          <h3>補足應用與專案決策資訊</h3>
+          <p>若工程承包商、SI 或 AV/IT 顧問是優先買家，可評估說清楚應用場景、系統架構、相容性、傳輸距離、整合方式與技術支援，讓產品優勢連到買家的專案任務。</p>
+        </article>
+      </div>
+      <h3>網站已有內容線索，後續可依優先買家整理</h3>
+      <p>瑞宥網站已有控制室、醫療、交通／數位看板、政府專案、KVM extender 與多畫面應用等內容線索，目前分散在產品、消息、展會、文章與案例頁。行銷上可先把既有素材串成「產業 → 應用情境 → 解決方案 → 相關產品」的瀏覽路徑，再依缺口補內容。</p>
+      <div class="callout">
+        <strong>可討論的第一個試點：</strong>若客戶確認 Control Room 等應用具優先性，可整合方案頁、架構圖、相關產品與常見工程問題；由業務補充買家問題，產品／工程同仁核對技術資訊，行銷整理成可搜尋、可轉介的內容。
+      </div>
+    </section>
+
+    <section class="panel" id="seo">
+      <p class="section-kicker">SEO prioritization</p>
+      <h2>H-tags：可逐步整理，但單靠跳級不足以解釋成效變化</h2>
+      <p class="lead">瑞宥 USBX-M311 頁面有清楚產品 H1，後續標題跳到 H3、H5，顯示模板層級可再整理。Google 建議使用描述清楚的標題與頁面結構；但目前沒有證據把這個單一結構現象連結到自然搜尋或詢問減少。應把它放入整體頁面檢視，再依影響與 CMS 成本排優先順序。</p>
+      <div class="grid three">
+        <article class="mini">
+          <h3>對搜尋有幫助的做法</h3>
+          <p>Google 建議讓標題描述頁面內容，並在標題、主標題等醒目位置使用買家會搜尋的詞。良好層級也方便訪客閱讀與瀏覽。</p>
+        </article>
+        <article class="mini">
+          <h3>ATEN 與 StarTech 抽查</h3>
+          <p>產品長名稱放在 H1 相當常見；StarTech 分類頁亦見 H1 後接 H5 的產品標題。產業頁面結構並非每頁都採嚴格 H1→H2→H3。</p>
+        </article>
+        <article class="mini">
+          <h3>瑞宥可先採取的優先順序</h3>
+          <p>先檢視重要頁面的搜尋標題、可被收錄性、產品資訊完整度、買家問題與詢問路徑，再評估是否值得調整 CMS 模板。標題層級是改善項目之一，不是單獨的成效診斷。</p>
+        </article>
+      </div>
+      <details>
+        <summary>同業 title 與 H-tags 抽查細節</summary>
+        <table>
+          <thead><tr><th style="width:22%">頁面</th><th style="width:42%">目前頁面 &lt;title&gt;</th><th>主要 H-tags</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://www.aten.com/global/en/products/kvm/kvm-extenders/?f4020%5B%5D=4" target="_blank" rel="noopener">ATEN 分類頁</a></td><td><code>Fiber Optic | ATEN Corporate Headquarters</code></td><td>H1「KVM Extenders / Fiber Optic」；產品卡型號使用 H3。</td></tr>
+            <tr><td><a href="https://www.aten.com/us/en/products/kvm/kvm-extenders/ce611/?p=1" target="_blank" rel="noopener">ATEN CE611 產品頁</a></td><td><code>Mini USB DVI HDBaseT™ KVM Extender (1920 x 1200@100m) - CE611, ATEN KVM Extenders | ATEN U.S.A.</code></td><td>產品名稱作 H1；內容區可見 H3 區塊標題。</td></tr>
+            <tr><td><a href="https://www.startech.com/en-us/audio-video-products/switchers" target="_blank" rel="noopener">StarTech Switchers 分類頁</a></td><td><code>Video Switchers | Audio-Video Products - Audio-Video Products | StarTech.com</code></td><td>H1「Video Switchers」；產品卡標題使用 H5。</td></tr>
+            <tr><td><a href="https://www.startech.com/en-us/audio-video-products/4port-8k-hdmi-switch" target="_blank" rel="noopener">StarTech HDMI Switch 產品頁</a></td><td><code>Switch between four HDMI video sources on a single display, with support for up to 8K 60Hz resolutions</code></td><td>完整產品名稱作 H1，功能描述作 H2。</td></tr>
+          </tbody>
+        </table>
+      </details>
+      <div class="callout caution">
+        <strong>標題長度的處理：</strong>完整產品 H1 有助買家辨認型號與規格，產業中也很常見。Google 搜尋結果標題可能從 <code>&lt;title&gt;</code>、H1 等來源產生，並依裝置顯示空間截短；因此可保留產品頁完整 H1，另檢查搜尋結果用的 <code>&lt;title&gt;</code> 是否清楚且精簡。<a href="https://developers.google.com/search/docs/appearance/title-link" target="_blank" rel="noopener">Google 搜尋結果標題說明</a>
+      </div>
+    </section>
+
+    <section class="panel" id="seogeo">
+      <p class="section-kicker">SEO + GEO · 共同成效基礎</p>
+      <h2>同業指出改善空間，是檢查入口；能見度取決於多個環節</h2>
+      <p class="lead">Google 說明搜尋會綜合多種頁面訊號；Google 搜尋中的 AI 摘要與 AI 模式也沿用基本 SEO 原則，沒有額外的 AI 專用技術門檻或特殊標記。以下整理成瑞宥可用的優先檢視框架。GEO 在此指內容被生成式搜尋或 AI 回答發現、理解與引用的機會；不同平台的來源選取方式不一，沒有一套可保證引用的通用公式。</p>
+      <div class="grid three">
+        <article class="mini">
+          <span class="tag fact">1 · 找得到、能收錄</span>
+          <h3>重要頁面可被爬取與索引</h3>
+          <p>確認產品與應用頁可公開存取、沒有被 robots/noindex 阻擋、主要內容可讀取，且能從網站內部連結找到。多語市場也要檢查語系頁與目標地區是否對應。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">2 · 對準買家任務</span>
+          <h3>頁面回應搜尋者真正要解決的事</h3>
+          <p>產品型號、規格詞和「如何完成某種系統／專案」是不同搜尋需求。瑞宥可用 GSC 查詢與落地頁資料，判斷泛品類詞、產品詞、應用詞各自帶來哪些市場觸及。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">3 · 有實質資訊</span>
+          <h3>提供買家可採用的技術與方案細節</h3>
+          <p>依產品事實補足應用環境、系統架構、相容性、傳輸距離、選型差異、整合限制及支援方式。原創且完整的專業資訊，比單純增加篇數或重複關鍵字更值得優先。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">4 · 有可信證據</span>
+          <h3>讓製造與工程能力可被驗證</h3>
+          <p>把規格文件、測試／認證、工程流程、可公開案例、技術支援與公司背景放在買家能找到的位置；也累積相關產業媒體、合作夥伴或專業來源的自然提及與連結。需要由瑞宥確認可公開範圍，避免只有「品質好、經驗豐富」等無證據主張。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">5 · 結構清楚、資訊一致</span>
+          <h3>標題、內文、連結與資料標記互相對得上</h3>
+          <p>以精確的搜尋標題與主標題說明頁面主題，再用 H2/H3 組織應用、規格、選型和常見問題；重要資訊要有文字版本，產品與方案頁彼此連結，結構化資料須符合頁面實際可見內容。</p>
+        </article>
+        <article class="mini">
+          <span class="tag fact">6 · 方便閱讀並採取下一步</span>
+          <h3>頁面體驗與詢問路徑清楚</h3>
+          <p>手機可讀性、載入與互動、頁面安全、主要內容辨識度會影響整體使用體驗；頁面也應讓 B2B 買家看懂如何詢問規格、索取資料或討論專案。這些面向需分別衡量搜尋觸及與詢問互動。</p>
+        </article>
+      </div>
+      <div class="grid">
+        <article class="mini">
+          <span class="tag fact">本次已建立的觀察基線</span>
+          <h3>瑞宥已進入搜尋與 AI 探索入口</h3>
+          <p>2026 GSC 生成式 AI 報表記錄約 31,900 次曝光（8/22–11/21）；GA4 記錄 2,206 個 AI 導流工作階段（1/1–11/23）。這些數據讓行銷可開始比較曝光頁面、到站內容與後續互動，代表可觀測入口已建立，不等同有效詢問或 AI 引用保證。</p>
+        </article>
+        <article class="mini">
+          <span class="tag hyp">仍需逐頁核對</span>
+          <h3>目前資料不是完整技術 SEO 健檢</h3>
+          <p>本次材料沒有包含全站索引覆蓋率、重要頁 URL Inspection、Core Web Vitals／行動版體驗或各市場查詢與著陸頁的完整交叉分析。這些應按優先產品與市場逐項核對，再判斷是否真有阻礙搜尋或買家理解的問題。</p>
+        </article>
+      </div>
+      <div class="callout">
+        <strong>對瑞宥目前最有用的排序：</strong>先核對重要產品／應用頁是否被收錄及帶來哪些搜尋需求，再選一個經客戶確認的 B2B 買家與應用情境，補上可驗證的技術資訊與清楚詢問路徑。GSC 用來看搜尋曝光、點擊、查詢與頁面；AI 搜尋曝光另列；GA4 看自然／AI 到站和 contact 事件；實際有效詢問仍需由業務以月別彙總回看。單一 H-tag 問題、AI 曝光或 GA4 事件都不能獨自代表商機成果。
+      </div>
+      <p class="small">本次已整理 2026 搜尋／AI 入口資料、GA4 contact 月趨勢、19 題買家問題抽查及同業 title/H-tags 頁面抽查，作為排定內容與網站工作的依據。現有資料尚未與有效詢問、報價或成交逐月對照，因此不宣稱已帶來特定商機或營收增量。</p>
+    </section>
+
+    <section class="panel" id="growth">
+      <p class="section-kicker">Growth opportunities</p>
+      <h2>廣告截圖與瑞宥商模：先查現象，再核對搜尋意圖</h2>
+      <div class="grid">
+        <article class="mini">
+          <span class="tag customer">客戶提出的觀察與搜尋詞</span>
+          <h3>截圖中沒有看到瑞宥網站</h3>
+          <ul>
+            <li>德國：USB extender</li>
+            <li>美國：HDMI video extender</li>
+            <li>阿聯：HDMI video extender</li>
+          </ul>
+          <p>廣告目前暫緩。以上是泛品類搜尋詞；需再和瑞宥的 B2B 買家角色、OEM/ODM 與專案合作需求對照，確認是否吻合。</p>
+        </article>
+        <article class="mini">
+          <span class="tag hyp">待驗證的商模假設</span>
+          <h3>搜尋詞可能沒有說出目標買家</h3>
+          <p>單看 USB extender 或 HDMI video extender，無法分辨搜尋者是零售採購、品牌商、系統整合商，或工程承包商。不能只憑詞面認定這些詞不適合，也不能把它們視為已對準專案買家。</p>
+        </article>
+      </div>
+      <div class="callout">
+        <strong>為何截圖可能沒出現瑞宥：</strong>單張搜尋結果截圖只能代表當下的查詢、地區、裝置與競價情境。要判斷原因，需核對截圖日期與當時廣告狀態、關鍵字比對、地區設定、曝光占有率，以及預算或排名造成的流失。以上帳戶資料目前<strong>未提供</strong>，因此不能把截圖缺席歸因於單一原因。<a href="https://support.google.com/google-ads/answer/7378077/why-you-may-not-see-your-ad" target="_blank" rel="noopener">Google Ads：為何可能看不到廣告</a>
+      </div>
+      <p class="small">後續先確認各市場的目標買家、產品／方案與合格詢問定義，再用搜尋字詞報表及 CRM／業務詢問品質核對投放是否對準瑞宥的 B2B 商模。</p>
+    </section>
+
+    <section class="panel" id="meeting">
+      <p class="section-kicker">Sales conversation</p>
+      <h2>建議會議說法與下一步</h2>
+      <div class="script">
+        <p>「謝謝您跟我們分享最近對優化成效和詢問狀況的感受。我們回頭整理了瑞宥目前累積的搜尋與網站資料：過去六個月有超過 1.5 萬次自然搜尋點擊，其中約八成來自台灣以外；今年也已看到 Google 生成式 AI 曝光，以及 ChatGPT、Gemini 等平台帶來的網站流量。這些資料顯示瑞宥已有國際搜尋觸及，也開始進入新的資訊探索入口。」</p>
+        <p>「GA4 今年 1 月至 11 月 23 日記錄到 1,004 次 contact 事件。月資料有起伏，10 月是 113 次；11 月截至 23 日記錄 46 次，按日平均低於 10 月。這說明網站仍有聯絡相關互動，但事件不等於有效詢問。我們希望和您一起把這些趨勢，對照業務端實際收到的詢問數量、目標市場和專案品質，找出最值得優先改善的環節。」</p>
+        <p>「我們也把同業指出的改善空間放回 SEO／GEO 整體脈絡檢視：除了標題與頁面結構，還要看重要頁是否能被收錄、內容是否回答買家問題、技術資訊是否可信，以及頁面是否方便閱讀與詢問。這次已整理同業頁面、AI 買家問題、2026 AI 入口及 contact 月趨勢，讓後續工作能按買家需求排序。前次報告提出把製造商優勢延伸為方案夥伴的內容方向；目前沒有新的進展資訊可供更新，想先確認這方向是否仍符合瑞宥現階段規劃，以及優先市場、產品和專案買家是哪些。」</p>
+      </div>
+      <h3>會議上優先確認三件事</h3>
+      <ol class="steps">
+        <li><strong>商業目標：</strong>優先發展的市場、產品、B2B 買家角色與詢問類型。</li>
+        <li><strong>客戶觀察：</strong>近期詢問變化主要是數量、品質、目標市場或專案進度；若可行，以月別彙總作為共同基線。</li>
+        <li><strong>第一個行動：</strong>確認一個優先產品／應用頁作為內容整理起點；並決定是否提供廣告帳戶近期摘要，作為後續投放方向討論依據。</li>
+      </ol>
+      <div class="grid">
+        <article class="mini"><h3>行銷團隊可接續</h3><p>整理優先市場的搜尋需求與頁面表現，提出一頁方案內容架構、內部素材清單及觀察指標。</p></article>
+        <article class="mini"><h3>客戶／業務協作</h3><p>確認目標買家與優先產品，提供可公開的技術資料、常見詢問及專案情境；需要時分享去識別化的月別詢問概況。</p></article>
+      </div>
+      <p class="small">網站既有 CMS 架構是安排執行方式時的條件。先從已確認的優先頁面與現有內容可支援的調整開始，待實際限制與效益清楚後，再討論需要的系統配合。</p>
+    </section>
+
+    <section class="panel" id="sources">
+      <p class="section-kicker">References & basis</p>
+      <h2>資料來源與判讀依據</h2>
+      <ul class="source-list">
+        <li><strong>瑞宥行銷季報告：</strong>2025-11-01 至 2026-04-30，GSC 搜尋表現、GA4 流量及網站內容盤點。</li>
+        <li><strong>Rextron GSC／GA4 AI 報表：</strong>2026-11-23 於已授權報表介面讀取；GSC 期間 2026-08-22 至 11-21，GA4 期間 2026-01-01 至 11-23。</li>
+        <li><strong>GA4 聯絡事件報表：</strong>2026-01-01 至 2026-11-23，事件名稱含 contact 的報表篩選；月別主要呈現精確事件名稱 <code>contact</code>，11 月為未滿月資料。</li>
+        <li><strong>AI 買家問題抽查：</strong>19 題，涵蓋認知、方案評估、供應商／品牌相關問題；為提示詞抽查，不等同所有國家、平台與使用者的普遍排名。</li>
+        <li><strong>同業公開頁面：</strong><a href="https://www.aten.com/global/en/products/kvm/kvm-extenders/?f4020%5B%5D=4" target="_blank" rel="noopener">ATEN KVM Extenders</a>、<a href="https://www.aten.com/us/en/products/kvm/kvm-extenders/ce611/?p=1" target="_blank" rel="noopener">ATEN CE611</a>、<a href="https://www.startech.com/en-us/audio-video-products/switchers" target="_blank" rel="noopener">StarTech Switchers</a>、<a href="https://www.startech.com/en-us/audio-video-products/4port-8k-hdmi-switch" target="_blank" rel="noopener">StarTech HDMI Switch</a>。</li>
+        <li><strong>Google 官方搜尋說明：</strong><a href="https://developers.google.com/search/docs/essentials/technical" target="_blank" rel="noopener">搜尋技術條件</a>、<a href="https://developers.google.com/search/docs/essentials" target="_blank" rel="noopener">Google Search Essentials</a>、<a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener">SEO Starter Guide</a>、<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener">有幫助、可靠且以人為本的內容</a>、<a href="https://developers.google.com/search/docs/appearance/title-link" target="_blank" rel="noopener">搜尋結果標題連結</a>、<a href="https://developers.google.com/search/docs/appearance/page-experience" target="_blank" rel="noopener">搜尋頁面體驗</a>、<a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener">AI 搜尋功能與網站</a>、<a href="https://support.google.com/webmasters/answer/16984139?hl=en" target="_blank" rel="noopener">生成式 AI 搜尋成效報表</a>、<a href="https://support.google.com/webmasters/answer/6211453?hl=en" target="_blank" rel="noopener">Search Console 資料異常</a>。</li>
+        <li><strong>客戶／業務提供的商務脈絡：</strong>B2B 為主、品牌發展方向、工程承包商機會、CMS 年代與廣告討論市場。</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>瑞宥 Rextron｜行銷價值與成長機會｜整理日期 2026-11-23</p>
+      <p>數據呈現搜尋與網站觸及；下一步以客戶確認的商業目標和詢問定義，深化成效回顧。</p>
+    </footer>
+  </div>
+</body>
+</html>
